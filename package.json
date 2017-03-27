@@ -1,0 +1,22 @@
+{
+  "name": "loopasync",
+  "version": "0.1.0",
+  "description": "Async loop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yankouskia/loopasync.git"
+  },
+  "author": "yankouskia aleksandr.yankovskiy@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yankouskia/loopasync/issues"
+  },
+  "homepage": "https://github.com/yankouskia/loopasync#readme",
+  "dependencies": {
+    "raf": "*"
+  }
+}
