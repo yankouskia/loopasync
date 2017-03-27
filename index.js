@@ -1,18 +1,18 @@
 const raf = require('raf');
 
-module.exports = function(array, func, parts) {
-  const arrayLen = array.length;
-  parts = (parts || Math.log2(arrayLen)) | 0;
-  const onlyPart = (arrayLen / parts) | 0;
+module.exports = function(collection, iteratee, parts) {
+  const collectionLen = collection.length;
+  parts = (parts || Math.log2(collectionLen)) | 0;
+  const onlyPart = (collectionLen / parts) | 0;
   let previous = 0;
 
   function loopPart() {
-    for (let i = previous, len = Math.min(arrayLen, previous + onlyPart); i < len; i++) {
-      func(array[i]);
+    for (let i = previous, len = Math.min(collectionLen, previous + onlyPart); i < len; i++) {
+      iteratee(collection[i]);
     }
 
     previous += onlyPart;
-    if (previous >= arrayLen) return;
+    if (previous >= collectionLen) return;
     raf(loopPart);
   }
 
