@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/yankouskia/loopasync/issues"
   },
-  "homepage": "https://github.com/yankouskia/loopasync#readme",
-  "dependencies": {
-    "raf": "*"
-  }
+  "homepage": "https://github.com/yankouskia/loopasync#readme"
 }
