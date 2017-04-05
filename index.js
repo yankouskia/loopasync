@@ -8,7 +8,7 @@ module.exports = function(collection, iteratee, parts) {
 
   function loopPart() {
     for (let i = previous, len = Math.min(collectionLen, previous + onlyPart); i < len; i++) {
-      iteratee(collection[i]);
+      iteratee(collection[i], i);
     }
 
     previous += onlyPart;
