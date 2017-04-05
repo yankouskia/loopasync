@@ -28,7 +28,7 @@ const loopasync = require('loopasync');
 ```js
 /*
   @param collection - collection for iteration
-  @param iteratee - iterates over elements of collection and invokes iteratee for each element
+  @param iteratee - iterates over elements of collection and invokes iteratee for each element and index as a second param
   @param parts - number of parts collection will be split in (default will be calculated for you)
 */
 loopasync(collection, iteratee[, parts]);
