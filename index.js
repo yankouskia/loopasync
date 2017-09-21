@@ -1,4 +1,4 @@
-const raf = require('raf');
+const raf = typeof requestAnimationFrame === 'function' ? requestAnimationFrame : setTimeout;
 
 module.exports = function(collection, iteratee, parts) {
   const collectionLen = collection.length;
